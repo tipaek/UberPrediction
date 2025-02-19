@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <h1 class="mt-4">Make a Prediction</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+
+    {% if result %}
+    <div class="alert alert-info mt-4">
+        <strong>Prediction:</strong> {{ result }}
+    </div>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Ignore virtual environment directories
+.venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific files
+*.log
+db.sqlite3
+/staticfiles/
+media/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
